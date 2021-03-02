@@ -1,3 +1,14 @@
+# This is an educational repository that teaches how to generate random numbers with various parameter settings 
+# using probability density functions (PDF) and probability mass functions (PMF); it also plots the simulated 
+# (generated) data showing the parameters values and the corresponding graphs. Briefly, it
+# simulates univariate continuous probability distribution
+# simulates univariate discrete probability distribution
+# simulates bi-variate normal distribution in various covariance matrix (requires 'mvtnorm' package)
+# plots the data using traditional plot system i.e. graphics package
+# declares runifd,qunifd, punifd and dunifd functions to support discrete uniform distribution
+
+
+
 # discrete uniform distribution (not part of base R)
 dunifd <- function(x, min=0, max=1)
   ifelse(x>=min & x<=max & round(x)==x, 1/(max-min+1), 0)
